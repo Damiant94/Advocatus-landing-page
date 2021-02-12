@@ -1,5 +1,5 @@
 const sections = [
-    document.querySelector("body"),
+    document.querySelector("#about-us-anchor"),
     document.querySelector("#practis-anchor"),
     document.querySelector("#lawyers-anchor"),
     document.querySelector("#publications-anchor"),
@@ -23,5 +23,12 @@ contactBtn.onclick = () => {
     sections[5].scrollIntoView({
         behavior: 'smooth'
     });
+}
+
+const logo = document.querySelector(".logo");
+logo.onclick = () => {
+    body.scrollIntoView({
+        behavior: 'smooth'
+    })
 }
 

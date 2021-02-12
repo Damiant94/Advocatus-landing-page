@@ -215,6 +215,7 @@ body.contrast .buttons .active {
 .nav-wrapper .nav .logo {
   font-weight: bold;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .nav-wrapper .nav .nav-links {
