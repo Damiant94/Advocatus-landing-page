@@ -1,0 +1,89 @@
+.faq-wrapper {
+    width: 100%;
+    display: flex;
+
+    background-color: #111;
+    justify-content: center;
+    z-index: 0;
+
+    .faq {
+        @extend %section;
+        width: 100%;
+
+        .info {
+            @extend %info;
+
+            &::after {
+                @extend %info-after;
+                content: "06";
+                opacity: 0.05;
+            }
+
+            h2 {
+                color: #fff;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: sans-serif;
+            padding-bottom: 20px;
+
+            > div {
+                margin: 15px;
+            }
+
+            .questions {
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                height: 300px;
+                font-size: 0.8rem;
+
+                > div {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $main-color;
+                    color: white;
+                    flex-grow: 1;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: color 0.3s ease-in-out;
+
+                    i {
+                        margin-top: 10px;
+                        color: white;
+                    }
+
+                    &:hover {
+                        color: #ccc;
+                    }
+
+                    &.active {
+                        color: $main-color;
+                        cursor: auto;
+
+                        i {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+
+            .answer {
+                width: 500px;
+                height: 300px;
+                background-color: $main-color;
+                border-radius: 3px;
+                padding: 30px 40px;
+                line-height: 1.8rem;
+                font-size: 0.9rem;
+                overflow-y: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.opinions-wrapper {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.92)), url("../img/meet.jpeg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+
+    .opinions {
+        @extend %section;
+        position: relative;
+
+        .info {
+            @extend %info;
+
+            &::after {
+                @extend %info-after;
+                content: "04";
+                opacity: 0.05;
+            }
+
+            h2 {
+                color: #fff;
+            }
+
+        }
+
+        .slider-opinions {
+            width: 100%;
+            height: 45%;
+            overflow: hidden;
+
+            .slide-opinion {
+                display: flex;
+                height: 100%;
+                width: 300%;
+
+                .opinion {
+                    display: flex;
+                    width: 1060px;
+                    height: fit-content;
+                    color: #999;
+                    justify-content: space-between;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 18px;
+                        top: 16px;
+                        background-color: $main-color;
+                        width: 300px;
+                        height: 280px;
+                        z-index: -1;
+                    }
+
+                    img {
+                        width: 320px;
+                        height: 300px;
+                        object-fit: cover;
+                        padding-bottom: 20px;
+                        padding-right: 20px;
+                    }
+
+                    .content {
+                        width: 640px;
+                        height: 350px;
+                        text-align: justify;
+                        padding: 20px 0;
+                        padding-right: 60px;
+                        font-size: 0.8rem;
+                        font-weight: bold;
+
+                        .text {
+                            font-family: sans-serif;
+                            line-height: 1.9rem;
+                        }
+
+                        .name {
+                            margin-top: 25px;
+                            font-size: 1.5rem;
+                            line-height: 2.5rem;
+                        }
+
+                        .position {
+                            font-family: sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+            align-items: center;
+            left: 40%;
+
+            div {
+                width: 8px;
+                height: 8px;
+                background-color: black;
+                border-radius: 50%;
+                border: 1px solid white;
+                transition: background-color 0.3s ease-in-out;
+                margin: 2px;
+                cursor: pointer;
+
+                &.active {
+                    background-color: white;
+                    width: 10px;
+                    height: 10px;
+                    cursor: auto;
+
+                    &:hover {
+                        background-color: white;
+                    }
+                }
+
+                &:hover {
+                    background-color: #333;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1115px) {
+    .opinions-wrapper {
+        .opinions {
+            .slider-opinions {
+                display: flex;
+                justify-content: space-between;
+
+                .slide-opinion {
+                    .opinion {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::before {
+                            left: 50.7%;
+                            transform: translateX(-50%);
+                        }
+
+                        .content {
+                            max-width: 80vw;
+                        }
+                    }
+                }
+            }
+
+            .buttons {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 120px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .opinions-wrapper {
+        .opinions {
+            .slider-opinions {
+                .slide-opinion {
+                    .opinion {
+                        img {
+                            width: 250px;
+                            height: 240px;
+                        }
+
+                        &::before {
+                            width: 230px;
+                            height: 220px;
+                            left: 50.5%;
+                            top: 15px;
+                        }
+
+                        .content {
+                            padding: 0;
+
+                            .text {
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.publications {
+    @extend %section;
+    width: 100%;
+
+    .info {
+        @extend %info;
+
+        &::after {
+            @extend %info-after;
+            content: "05";
+            opacity: 0.8;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        flex-wrap: wrap;
+
+        .publication {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 335px;
+            height: 540px;
+            font-family: sans-serif;
+            border-bottom: 2px solid $main-color;
+            margin: 0 9px;
+            margin-top: 15px;
+
+            img {
+                height: 50%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .header {
+                .title {
+                    font-family: serif;
+                    font-size: 1.5rem;
+                }
+
+                .under-title {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1rem;
+
+                    .author {
+                        font-weight: bold;
+
+                        span {
+                            font-style: italic;
+                            font-weight: normal;
+                            color: #888;
+                        }
+                    }
+
+                    .date {
+                        font-style: italic;
+                        color: #888;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .description {
+                font-size: 0.9rem;
+                text-align: justify;
+                line-height: 1.8rem;
+                color: #999;
+                font-weight: bold;
+            }
+
+            .bottom-info {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 15px;
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

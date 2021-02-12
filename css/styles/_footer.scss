@@ -1,0 +1,36 @@
+.footer-wrapper {
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    background-color: #111;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: $max-width;
+        font-size: 1rem;
+        margin: 0 20px;
+    
+        .left {
+            font-family: serif;
+        }
+    
+        .right {
+            display: flex;
+
+            i {
+                margin-left: 20px;
+                cursor: pointer;
+                transition: color 0.3s ease-in-out;
+
+                &:hover {
+                    color: #aaa;
+                }
+            }
+        }
+    }
+}

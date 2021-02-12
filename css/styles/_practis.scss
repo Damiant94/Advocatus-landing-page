@@ -1,0 +1,97 @@
+.practis-wrapper {
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+
+    .practis {
+        @extend %section;
+        padding-bottom: 40px;
+
+        .info {
+            @extend %info;
+
+            &::after {
+                @extend %info-after;
+                content: "02";
+                opacity: 0.05;
+            }
+
+            h2 {
+                color: #fff;
+            }
+        }
+
+        .practis-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            padding-left: 10px;
+
+            > .practis-item {
+                width: 400px;
+                height: 200px;
+                display: grid;
+                align-items: center;
+                grid-template-columns: 17% 83%;
+                grid-template-rows: 20% 80%;
+                color: #aaa;
+                line-height: 0.9rem;
+
+                i {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    color: $main-color;
+                    font-size: 2.5rem;
+                }
+
+                .header {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    font-size: 1.5rem;
+                    align-self: start;
+                }
+
+                .content {
+                    align-self: start;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    font-family: sans-serif;
+                    font-size: 0.9rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .practis-wrapper {
+        .practis {
+            .practis-content {
+                .practis-item {
+                    width: 100%;
+                    height: fit-content;
+                    padding-bottom: 30px;
+
+                    i {
+                        font-size: 1.5rem;
+                    }
+
+                    .header {
+                        font-size: 1.3rem;
+                        line-height: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
