@@ -192,7 +192,7 @@ body.contrast .buttons .active {
   background-color: #ffef0c;
 }
 
-.nav-wrapper .buttons-font-size button > .active {
+.nav-wrapper .buttons-font-size button.active {
   pointer-events: none;
   border: 2px solid #ffef0c;
 }
