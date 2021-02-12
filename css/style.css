@@ -15,25 +15,25 @@ body {
 
 body.contrast *,
 body.contrast *::-webkit-input-placeholder {
-  background-color: black !important;
+  background: black !important;
   color: yellow !important;
 }
 
 body.contrast *,
 body.contrast *:-ms-input-placeholder {
-  background-color: black !important;
+  background: black !important;
   color: yellow !important;
 }
 
 body.contrast *,
 body.contrast *::-ms-input-placeholder {
-  background-color: black !important;
+  background: black !important;
   color: yellow !important;
 }
 
 body.contrast *,
 body.contrast *::placeholder {
-  background-color: black !important;
+  background: black !important;
   color: yellow !important;
 }
 

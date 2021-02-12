@@ -14,7 +14,7 @@ body {
     &.contrast {
         *,
         *::placeholder {
-            background-color: black !important;
+            background: black !important;
             color: yellow !important;
         }
 
