@@ -354,9 +354,13 @@ body.contrast .buttons .active {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
   .nav-wrapper .nav .nav-links .nav-link a {
     font-size: 0.8rem;
+    padding: 5px 0px;
+    margin: 10px;
   }
 }
 

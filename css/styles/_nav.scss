@@ -165,7 +165,6 @@
     
         .nav {
             .logo {
-                // display: none;
                 position: absolute;
                 top: 20px;
                 font-size: 1.2rem;
@@ -177,9 +176,13 @@
                 flex-direction: column;
     
                 .nav-link {
-                    width: fit-content;    
+                    width: fit-content;
+                    transform: translateX(-5px);
+                    
                     a {
                         font-size: 0.8rem;
+                        padding: 5px 0px;
+                        margin: 10px;
                     }
                 }
             }
