@@ -82,3 +82,25 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .publications {
+        .content {
+            .publication {
+                .header {
+                    .title {
+                        font-size: 1.2rem;
+                    }
+
+                    .under-title {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .description {
+                    font-size: 0.65rem;
+                }
+            }
+        }
+    }
+}

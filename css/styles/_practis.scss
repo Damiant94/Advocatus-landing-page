@@ -3,7 +3,7 @@
     background-color: #111;
     display: flex;
     justify-content: center;
-    z-index: -2;
+    z-index: 0;
 
     .practis {
         @extend %section;

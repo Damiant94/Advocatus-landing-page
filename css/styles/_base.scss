@@ -8,6 +8,31 @@ html {
     font-size: 16px;
 }
 
+body {
+    position: relative;
+
+    &.contrast {
+        *,
+        *::placeholder {
+            background-color: black !important;
+            color: yellow !important;
+        }
+
+        .hamburger {
+            span {
+                background: yellow !important;
+            }
+        }
+
+        .buttons {
+            .active {
+                background: yellow !important;
+            }
+        }
+
+    }
+}
+
 $max-width: 1100px;
 $nav-height: 100px;
 $main-color: rgb(218, 181, 59);
@@ -20,7 +45,7 @@ $main-color: rgb(218, 181, 59);
     overflow: hidden;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .main {
         margin-top: 0;
     }
