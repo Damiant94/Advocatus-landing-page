@@ -986,13 +986,15 @@ body.contrast .buttons .active {
   }
   .opinions-wrapper .opinions .slider-opinions .slide-opinion .opinion .content {
     max-width: 80vw;
-    height: 400px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .opinions-wrapper .opinions .buttons {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: 120px;
+    bottom: 50px;
   }
 }
 

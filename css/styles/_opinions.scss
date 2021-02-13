@@ -146,7 +146,7 @@
 
                         .content {
                             max-width: 80vw;
-                            height: 400px;
+                            height: fit-content;
                         }
                     }
                 }
@@ -155,7 +155,7 @@
             .buttons {
                 left: 50%;
                 transform: translateX(-50%);
-                bottom: 120px;
+                bottom: 50px;
             }
         }
     }
