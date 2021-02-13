@@ -6,4 +6,4 @@ I have only used HTML, SCSS and JavaScript, no external libraries, no bootstrap 
 
 # Demo
 
-[damiant94.github.io/Advocatus-landing-page](https://damiant94.github.io/Advocatus-landing-page/)
+[damiant94.github.io/Advocatus-landing-page](https://damiant94.github.io/advocatus-landing-page/)
