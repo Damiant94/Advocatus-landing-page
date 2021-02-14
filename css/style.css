@@ -926,7 +926,7 @@ body.contrast .buttons .active {
 
 .opinions-wrapper .opinions .buttons {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -999,7 +999,6 @@ body.contrast .buttons .active {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: 50px;
   }
 }
 
