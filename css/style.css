@@ -525,7 +525,9 @@ body.contrast .buttons .active {
       -ms-flex-align: start;
           align-items: start;
   width: 530px;
-  height: 250px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -ms-grid-columns: 20% 80%;
       grid-template-columns: 20% 80%;
   -ms-grid-rows: 0.8fr, 1fr, 1fr, 1fr;
@@ -543,6 +545,7 @@ body.contrast .buttons .active {
   grid-row-end: 2;
   font-family: serif;
   font-weight: bold;
+  padding-bottom: 30px;
 }
 
 .about-us .content .history .year2016, .about-us .content .history .year2015, .about-us .content .history .year2014 {
@@ -551,6 +554,8 @@ body.contrast .buttons .active {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 1.2rem;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .about-us .content .history .year2016 {

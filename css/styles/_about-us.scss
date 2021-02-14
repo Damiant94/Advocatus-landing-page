@@ -24,7 +24,7 @@
             display: grid;
             align-items: start;
             width: 530px;
-            height: 250px;
+            height: fit-content;
             grid-template-columns: 20% 80%;
             grid-template-rows: 0.8fr, 1fr, 1fr, 1fr;
             row-gap: 10px;
@@ -37,12 +37,16 @@
                 grid-row-end: 2;
                 font-family: serif;
                 font-weight: bold;
+                // padding: 10px 0;
+                padding-bottom: 30px;
             }
     
             %year {
                 font-weight: bold;
                 align-self: center;
                 font-size: 1.2rem;
+                padding-bottom: 20px;
+                padding-top: 10px;
             }
     
             .year2016 {
